@@ -1,13 +1,18 @@
 package org.zoo;
 
-public class Dog extends Animal{
+public class Bird extends Animal implements CanFly{
     @Override
     public void makeASound() {
-        System.out.println("Bau bau");
+        System.out.println("pio pio");
     }
 
     @Override
     public void eat() {
-        System.out.println("Mangio carne");
+        System.out.println("Mangio vermi");
+    }
+
+    @Override
+    public void fly() {
+        System.out.println("che bello volare!!!");
     }
 }
